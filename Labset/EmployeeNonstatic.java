@@ -26,7 +26,7 @@ class EmployeeDetails{
        da = S.nextDouble();
        System.out.print("Enter the Employee hra :");
        hra = S.nextDouble();
-       salary = hra + basic_sal + da + hra;
+       salary = basic_sal + da + hra;
        
      }
      
