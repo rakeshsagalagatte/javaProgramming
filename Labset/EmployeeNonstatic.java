@@ -64,6 +64,8 @@ public class EmployeeNonstatic{
       System.out.println("Enter the Details of the employees.");
       EmployeeDetails outer =  new EmployeeDetails();
       outer.read();
+     //
+     // EmployeeDetails.EmployeeSalary inner = new outer.EmployeeSalary();
      
    }
 }

@@ -38,7 +38,7 @@ public class StaticDemonstration{
    Outer O = new Outer();                              //Declarartion of outer class object;
      
    O.static_Method();  
-   Outer.Inner_NonStatic Inn = new Inner_NonStatic.new Outer();  //Declarartion of non-static inner class object;
+   Outer.Inner_NonStatic Inn = O.new Inner_NonStatic();  //Declarartion of non-static inner class object;
    Inn.DisplayMethod(); 
  }
 }

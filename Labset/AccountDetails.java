@@ -12,7 +12,7 @@ public class AccountDetails{
     System.out.println("Enter the Detailes of Account holder .");
     System.out.print("Enter the Account holder name :");
     String name = S.next();
-    System.out.print("Enter the Account number name :"); 
+    System.out.print("Enter the Account number :"); 
     String AccountNumber = S.next();
     System.out.print("Enter the balance : ");
     double balance = S.nextDouble();
