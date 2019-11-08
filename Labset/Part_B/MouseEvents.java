@@ -76,3 +76,14 @@ public class MouseEvents extends Applet implements MouseListener,MouseMotionList
      showStatus(msg);
    }
 }
+/*
+
+<html>
+  <applet code="MouseEvents.class" height=500 width=500>
+  
+  </applet>
+ </html> 
+
+*/
+
+

@@ -43,7 +43,7 @@ class Queue
     synchronized void put(int n)
     {
        while(value)
-       {
+       
           try{
            wait();
           }
@@ -56,13 +56,13 @@ class Queue
           System.out.println("put" + n);
          
           notify();
-       }
+       
     }
     
     synchronized int get()
     {
        while(!value)
-       {
+       
             try{
               wait();
             }
@@ -75,7 +75,7 @@ class Queue
             value = false;
             notify();
            
-       }
+       
         return n;
     }
     

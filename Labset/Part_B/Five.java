@@ -1,4 +1,4 @@
-import java.io.Thread;
+import java.lang.Thread;
 
 public class Five {
  
@@ -9,7 +9,7 @@ public class Five {
          Thread t3 = new Thread();
          Thread t4 = new Thread();
          Thread t5 = new Thread();  */
-         for(int i=1;i<6;i++)
+         for(int i=0;i<5;i++)
          {
              t[i] = new Thread();
               t[i].setPriority(i);
@@ -20,16 +20,16 @@ public class Five {
          t4.setPriority(4);
          t5.setPriority(5); */
          try{
+           t[3].sleep(1000);
            t[4].sleep(1000);
-           t[5].sleep(1000);
          }
          catch (Exception ex)
          {
             System.out.println(ex);
          }
-         for(int i=1;i<6;i++)
+         for(int i=0;i<5;i++)
          {
-            System.out.println(" Thread " + i + "  is  " + T[i].isAlive());
+            System.out.println(" Thread " + i + "  is  " + t[i].isAlive());
          } 
          
    }  
