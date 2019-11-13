@@ -13,7 +13,7 @@ class login extends JFrame implements ActionListener
         static final String dbPwd = "root123";
         login()
         {
-                 usrLabel = new Jlabel();
+                 usrLabel = new JLabel();
                  usrLabel.setText("username");
                  usrText = new JTextField(15);
 		pwdLabel = new JLabel();
