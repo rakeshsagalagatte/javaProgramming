@@ -1,6 +1,6 @@
 import java.io.File;
 
-class FileAttribute {
+public class FileAttribute {
     
      static void p(String s)
      {
@@ -9,7 +9,7 @@ class FileAttribute {
 
      public static void main(String args[])
      {
-        File f = new File("/home/ise/Rakesh/JAVA/Labset/Part_B/Banner.java");
+        File f = new File("../Part_B");
         p("File Name : " + f.getName());
         p("Path: " + f.getPath());
         p("Abs Path: " + f.getAbsolutePath());
@@ -17,7 +17,7 @@ class FileAttribute {
         p(f.exists() ? "exits" : "does not exist");
         p(f.canWrite() ? "is Writeable" : "is not Writeable");
         p(f.canRead()? "is readable" : "is not readable");
-        p("is " + (f.isDirectory() ? "" : "not " + " a directory"));
+        p("is " + (f.isDirectory() ? "Directory" : "not " + " a directory"));
         p(f.isFile() ? "is normal file" : "might be a named pipe");
         p(f.isAbsolute() ? " is absolute" : "is not absolute");
         p("File last modified : " + f.lastModified());
