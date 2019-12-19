@@ -7,7 +7,7 @@ class login extends JFrame implements ActionListener
         JPanel panel;
         JLabel usrLabel,pwdLabel;
         JTextField usrText,pwdText;
-        static final String dbClass = "com.mysql.jdbc,Driver";
+        static final String dbClass = "com.mysql.jdbc.Driver";
         static final String dbUrl = "jdbc:mysql://localhost/RAK";  
         static final String dbUsr = "root";
         static final String dbPwd = "root123";
