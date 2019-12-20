@@ -1,5 +1,5 @@
 import java.io.*;
-class MyFiles
+public class File2
 {
 	public static void main(String args[]) throws IOException
 	{

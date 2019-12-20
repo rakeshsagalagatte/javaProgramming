@@ -21,9 +21,9 @@ public class LastAccessedHttp extends HttpServlet
           out.println("</head>");
           out.println("<body>");
           out.println("<h2> Session Creation and Last-Accessed Time </h2> ");
-          out.println("The time and date now is : " + formatter.format(now) + "<br><br>");
-          out.println("<The session creation time: HttpSession.getCreationTime():" + formatter.format(creationTime)+ "<br><br>");
-          out.println("The last time the session was accessed: HttpSession.getLastAccessedTime():" + formatter.format(lastAccessed) );
+          out.println(" The time and date now is : " + formatter.format(now) + "<br><br>");
+          out.println(" The session creation time: " +  session.getCreationTime() + ":   "  + formatter.format(creationTime));
+          out.println("The last time the session was accessed:  "  + session.getLastAccessedTime() + ": " + formatter.format(lastAccessed) );
           out.println("</body>");
           out.println("</html>");
     }
